@@ -1,6 +1,6 @@
 var GoPro = require('../lib/index.js');
 
-var cam = new GoPro.Camera();
+var cam = new GoPro.Camera({maxRetries: 1, timeout: 2000});
 
 // Set camera mode
 cam.mode(GoPro.Settings.Modes.Photo, GoPro.Settings.Submodes.Photo.Single)
