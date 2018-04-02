@@ -10,7 +10,7 @@ cam.restartStream().then(function () {
     var STREAM_PORT =           8082;
     var WEBSOCKET_PORT =        8084;
     var STREAM_MAGIC_BYTES =    'jsmp';
-    var width =                 320;
+    var width =                 432;
     var height =                240;
 
     var socketServer = new (require('ws').Server)({port: WEBSOCKET_PORT});
